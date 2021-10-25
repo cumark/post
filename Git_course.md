@@ -8,7 +8,7 @@ tags:
 categories:
   - 软件技术
 abbrlink: 547feeee
-date: 2021-09-24 11:30:00
+date: 2021-10-05 20:20:00
 ---
 
 ## 1.Git在Windows上的安装
@@ -251,7 +251,21 @@ $ git merge testing
 
 
 
+## 9.github push的鉴权
 
+github从21年8月13日后在push时不支持密码验证身份，只能采取token验证的方式
+
+![](https://cdn.jsdelivr.net/gh/cumark/picBed/20211005200301.png)
+
+token在打开个人设置，开发者选项，个人通行token中获得
+
+![](https://cdn.jsdelivr.net/gh/cumark/picBed/20211005201639.png)
+
+token只会显示一次，如果想要长期使用，可以将其保存下来或者输入以下命令存到cache之中
+
+```
+git config --global credential.helper cache
+```
 
 参考链接：
 
